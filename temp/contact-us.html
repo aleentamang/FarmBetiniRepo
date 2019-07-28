@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/x-icon/png" href="img/logo_betini.jpg">
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
+    <!-- Owl carousel -->
+    <link type="text/css" href="lib/OwlCarousel2/dist/css/owl.carousel.css" rel="stylesheet">
+    <link type="text/css" href="lib/OwlCarousel2/dist/css/owl.theme.default.css" rel="stylesheet">
+    <!-- li scroller-->
+    <link type="text/css" href="lib/li-scroller/li-scroller.css" rel="stylesheet">
+    <!--  <link href="lib/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet" /> -->
+
+    <!-- Bootstrap Select Css -->
+    <link href="lib/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+    <link href="lib/bootstrap-datepicker/css/bootstrap-datepicker.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Contact Farm Beteni</title>
+</head>
+
+<body>
+    <style type="text/css">
+        #header{
+            top: 0!important;
+        }
+    </style>
+
+    <!--    <div class="container m-t-130"><div class="col-md-12"> <div class="parallax"></div></div></div> -->
+
+    <!--navbar -->
+    <header class="header" id="header">
+        <div class="container no-padding">
+
+            <!--//logo-->
+            <nav class="main-nav " id="top-navbar" role="navigation">
+                <div class="navbar-header">
+
+                    <div class="logo-show-in-sm-screen">
+                        <a href="index.html"><img src="img/logo_betini.jpg" alt="Logo"></a>
+                    </div>
+
+                    <button class="navbar-toggle" data-target="#navbar-collapse" data-toggle="slide-collapse" type="button">
+                     <i class="fa fa-bars" aria-hidden="true"></i>
+                     </button>
+                    <!--//nav-toggle-->
+                </div>
+                <!--//navbar-header-->
+                <div class="navbar-collapse collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                          <a class="navbar-brand" href="index.html"><img class="logo-home" src="img/logo_betini.jpg"></a>
+                        <li class="active nav-item">
+                            <a class="nav-link " href="index.html">
+                           Home
+                           </a>
+                        </li>
+
+                        <li class="nav-item dropdown dropdown-hoverable">
+                            <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Farm Beteni</a>
+                            <ul class="dropdown-menu">
+
+                                <li> <a class="dropdown-item" href="#">Activities</a></li>
+                                <li> <a class="dropdown-item" href="#">Sight Seeings</a></li>
+                               <!--  <li> <a class="dropdown-item" href="#">Accomodation</a></li> -->
+                                <li> <a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutus.html">
+                           About Us
+                           </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html">
+                           Contact Us
+                           </a>
+                        </li>
+
+                    </ul>
+                    <!--//nav-->
+                </div>
+                <!--//navabr-collapse-->
+            </nav>
+            <!--//main-nav-->
+
+            <div class="latest-news">
+                <div class="col-lg-12 col-md-12 no-padding">
+                    <div class="latest-news-container"> <span>Latest News :</span>
+                        <div class="tickercontainer">
+                            <div class="mask">
+                                <ul class="latest-news-list" id="ticker01">
+                                    <li><a href="#">My First News Item</a></li>
+                                    <li><a href="#">My Second News Item</a></li>
+                                    <li><a href="#">My Third News Item</a></li>
+                                    <li><a href="#">My Four News Item</a></li>
+                                    <li><a href="#">My Five News Item</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--//container-->
+    </header>
+
+    <main><!-- 
+ <div class="parallax-contact">
+      
+ </div> -->
+  <div id="map" class="m-b-40"></div>
+
+
+ <section class="contact-us-top m-b-40">
+               <div class=" container ">
+                    <h1 class=" m-b-40">Contacts Us </h1>
+                    <div class="row">
+                        <div class="col-md-7">
+                            <!--   <div class="card p-20">  -->
+                            <div>
+                                <h3 class=" m-b-40">Send a Query</h3>
+                                <form id="form_validation" class="p-r-40" method="POST">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group form-float">
+                                                <div class="form-line">
+                                                    <input type="text" class="form-control" name="name" required>
+                                                    <label class="form-label">First Name</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+
+                                            <div class="form-group form-float">
+                                                <div class="form-line">
+                                                    <input type="text" class="form-control" name="surname" required>
+                                                    <label class="form-label">Last Name</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+
+                                            <div class="form-group form-float">
+                                                <div class="form-line">
+                                                    <input type="email" class="form-control" name="email" required>
+                                                    <label class="form-label">Email</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="radio" name="gender" id="male" class="with-gap">
+                                                <label for="male">Male</label>
+
+                                                <input type="radio" name="gender" id="female" class="with-gap">
+                                                <label for="female" class="m-l-20">Female</label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+
+                                            <div class="form-group form-float">
+                                                <div class="form-line">
+                                                    <textarea name="description" cols="30" rows="3" class="form-control no-resize" required></textarea>
+                                                    <label class="form-label">Description</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="checkbox" id="checkbox" name="checkbox">
+                                                <label for="checkbox">I have read and accept the terms</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <button class="message-btn btn  waves-effect pull-right "> <i class="fa fa-paper-plane-o" aria-hidden="true"></i>Send</button>
+
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-5">
+                            <!-- <div class="card"> -->
+                            <div>
+                                <h3 class=" m-b-40 p-l-40">Contact Details</h3>
+                                <ul class="contact-list">
+                                    <li class="p-t-0"><i class="fa fa-home" aria-hidden="true"></i>
+                                        <b>The Farm At Beteni</b></li>
+
+                                    <li><i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        <b>Beteni, Dhaibung, Rasuwa</b></li>
+
+                                    <li><i class="fa fa-phone-square" aria-hidden="true"></i><b>01-234567 / 01-345678</b> </li>
+                                    <li><i class="fa fa-envelope" aria-hidden="true"></i><b>info@farmbeteni.com</b> </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+ </section>
+
+
+
+
+                <button type="button" class="booking-btn btn btn-default waves-effect m-r-20" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#bookingModal">Book now</button>
+                <div class="modal fade" id="bookingModal" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title text-center" id="bookingModalLabel">Booking Inquiry Form</h4>
+                            </div>
+                            <div class="modal-body">
+
+                                <form id="booking_validation" method="POST">
+                                    <div class="col-md-12">
+                                        <div class="col-xs-6">
+
+                                            <b>Room Type</b>
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                <i class="fa fa-list-alt" aria-hidden="true"></i>
+                                            </span>
+
+                                                <select class="form-control show-tick  selectpicker" required>
+                                        <option>Single Bed</option>
+                                        <option>Twin Bed</option>
+                                        <option>Triple Bed</option>
+                                       
+                                    </select>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-xs-6">
+
+                                            <b>No of Room</b>
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                <i class="fa fa-object-group" aria-hidden="true"></i>
+                                            </span>
+                                                <select class="form-control show-tick  selectpicker" required>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4 </option>
+                                         <option>5</option>
+                                        <option>6 </option>
+                                    </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="col-xs-6">
+
+                                            <b>No of Guest Travelling</b>
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                <i class="fa fa-users" aria-hidden="true"></i>
+                                            </span>
+                                                <select class="form-control show-tick  selectpicker" required>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                    </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+
+                                            <b>No of Childeren </b>
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                <i class="fa fa-child" aria-hidden="true"></i>
+                                            </span>
+                                                <select class="form-control show-tick  selectpicker">
+                                        <option>0</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4 </option>
+                                         <option>5</option>
+                                        <option>6 </option>
+                                    </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="col-xs-6">
+
+                                            <b>Check In</b>
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                                            </span>
+                                                <div class="form-line">
+                                                    <input type="date" class="form-control " placeholder="" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <b>Check Out</b>
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                <i class="fa fa-calendar-times-o" aria-hidden="true"></i>
+                                            </span>
+                                                <div class="form-line">
+                                                    <input type="date" class="form-control " placeholder=" required">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="col-xs-6">
+
+                                            <b>Contact No</b>
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                <i class="fa fa-mobile fa-lg" aria-hidden="true"></i>
+                                            </span>
+                                                <div class="form-line">
+                                                    <input type="number" class="form-control " placeholder="" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <b>Home Address</b>
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                <i class="fa fa-address-card-o" aria-hidden="true"></i>
+                                            </span>
+                                                <div class="form-line">
+                                                    <input type="text" class="form-control " placeholder="" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="col-xs-6">
+
+                                            <b>Email</b>
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                            </span>
+                                                <div class="form-line">
+                                                    <input type="email" class="form-control " placeholder="email address" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <b>Description</b>
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                            </span>
+                                                <div class="form-line">
+                                                    <textarea name="description" cols="3" rows="2" class="form-control no-resize" required></textarea>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="action-button">
+                                        <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">CLOSE</button>
+                                        <button type="submit" class="btn btn-link waves-effect">BOOK NOW</button>
+
+                                    </div>
+
+                                </form>
+
+                                <!-- <div class="col-md-6">
+
+                                 <div class="form-group">
+                                        <div class="form-line" id="bs_datepicker_container" >
+                                            <input type="date" class="form-control" placeholder="Please choose a date...">
+                                        </div>
+                                    </div>
+</div> -->
+                                <!--  <div class="col-md-6">
+    
+                                    <p>
+                                        <b>Basic</b>
+                                    </p>
+                                    <select class="form-control show-tick  selectpicker">
+                                        <option>Mustard</option>
+                                        <option>Ketchup</option>
+                                        <option>Relish</option>
+                                    </select>
+
+                               
+                                    </div> -->
+
+                            </div>
+                            <div class="modal-footer">
+                                <!--  <button type="button" type="submit" class="btn btn-link waves-effect">Book Now</button>
+                            <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">CLOSE</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 
+        <div class="container">
+            <div class="col-md-12"><div class="parallax3"></div></div></div> -->
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-xs-6 footer-brand animated fadeInLeft">
+                    <img class="footer-logo" src="img/logo_betini.jpg">
+                    <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.</p>
+                    <p>© 2019 Betini Farm, All rights reserved</p>
+                </div>
+                <div class="col-md-4 col-xs-6  footer-nav animated fadeInUp">
+                    <h4>Menu —</h4>
+                    <div class="col-md-6">
+                        <ul class="pages">
+                            <li><a href="#">Our Programs</a></li>
+                            <li><a href="#">Special Offers</a></li>
+                            <li><a href="#">Packages</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list">
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="contact-us.html">Contacts</a></li>
+                            <li><a href="termsconditions.html">Terms & Condition</a></li>
+                            <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 footer-social animated fadeInDown">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-rss"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-ns animated fadeInRight">
+                    <div>
+                        <h4>Contact Details</h4>
+                        <ul class="contact-list-main">
+                            <li><i class="fa fa-home" aria-hidden="true"></i>
+                                <b>The Farm At Beteni</b></li>
+
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <b>Thahity,Thamel</b></li>
+
+                            <li><i class="fa fa-phone-square" aria-hidden="true"></i><b>01-234567 / 01-345678</b> </li>
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i><b>info@farmbeteni.com</b> </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+    <section class="bottom-section-footer">
+        <div class="container">
+
+            <div class="col-md-6">
+                <!--                <p>&copy; Copyright 2019  Design by: <a href="#">Aleen Tamang</a> </p> -->
+            </div>
+            <div class="col-md-6">
+                <p class="pull-right">A Complete .......</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Jquery core -->
+    <script src="lib/jquery/jquery-2.1.4.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <script src="lib/jQuery-slimScroll-1.3.8/jquery.slimscroll.js"></script>
+    <!-- Owl carousel -->
+    <script src="lib/OwlCarousel2/dist/owl.carousel.js"></script>
+    <script src="lib/news-ticker/jquery.newsTicker.min.js"></script>
+    <!--    <script src="lib/simple-weather/moment.js"></script> -->
+    <script src="lib/li-scroller/jquery.li-scroller.1.0.js"></script>
+    <!-- <script src="lib/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+ -->
+    <!-- Select Plugin Js -->
+    <script src="lib/bootstrap-select/js/bootstrap-select.js"></script>
+    <script src="lib/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="lib/jquery-validation/jquery.validate.js"></script>
+     <script type="text/javascript" src="js/google.js"></script>
+    <script type="text/javascript" src="lib/gmaps/gmaps.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-Qi90udpVFTNV1qo_ed7HgP_wC0CtAaI&callback=initMap" type="text/javascript"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/form-validation.js"></script>
+
+
+    <script type="text/javascript">
+    </script>
+
+</body>
+
+</html>

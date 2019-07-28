@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+    <!-- Owl carousel -->
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!--     <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/loginstyle.css">
+
+    <title>Login Admin</title>
+</head>
+
+<body id="particles-js">
+    <div class="login-page centered-panel">
+        <div class="login-box">
+            <div class="logo">
+                <a href="javascript:void(0);">Farm at <b>Beteni</b></a>
+                <small>Admin pannel</small>
+            </div>
+            <div class="card">
+                <div class="body">
+                    <form id="sign_in" method="POST">
+                        <div class="msg">Sign in to start your session</div>
+                        <!-- <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="material-icons">person</i>
+                        </span>
+                        <div class="form-line">
+                            <input type="text" class="form-control" name="username" placeholder="Username" required autofocus>
+                        </div>
+                    </div>
+ -->
+
+                        <div class="form-group form-float">
+                            <div class="row">
+                                <div class="col-xs-2">
+                                    <i class="material-icons">person</i>
+
+                                </div>
+                                <div class="col-xs-10">
+
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" name="username" required autofocus>
+                                        <label class="form-label">Username</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group form-float">
+                            <div class="row">
+                                <div class="col-xs-2">
+
+                                    <i class="material-icons">lock</i>
+
+                                </div>
+                                <div class="col-xs-10">
+                                    <div class="form-line">
+                                        <input type="password" class="form-control" name="password" required>
+                                        <label class="form-label">Password</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-8 p-t-5">
+
+                                <div class="form-group">
+                                    <input type="checkbox" id="rememberme" name="rememberme" required>
+                                    <label for="rememberme">Remember Me</label>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <button class="btn btn-block bg-pink waves-effect" type="submit">SIGN IN</button>
+                            </div>
+                        </div>
+                        <div class="row m-t-15 m-b--20">
+
+                            <div class="col-xs-12 text-center">
+                                <a href="forgot-password.html">Forgot Password?</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script type="text/javascript" src="lib/particles.js-master/particles.js"></script>
+<script type="text/javascript" src="lib/particles.js-master/demo/js/lib/stats.js"></script>
+
+<script src="lib/jquery/jquery-2.1.4.min.js"></script>
+<!-- Bootstrap -->
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="js/form-validation.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+    $('#sign_in').validate({
+        highlight: function (input) {
+            console.log(input);
+            $(input).parents('.form-line').addClass('error');
+        },
+        unhighlight: function (input) {
+            $(input).parents('.form-line').removeClass('error');
+        },
+        errorPlacement: function (error, element) {
+            $(element).parents('.input-group').append(error);
+        }
+    });
+});
+</script>
+
+<!-- Jquery core -->
+<script type="text/javascript" src="lib/particles.js-master/demo/js/app.js"></script>
+
+<script>
+    var count_particles, stats, update;
+      stats = new Stats;
+      stats.setMode(0);
+      stats.domElement.style.position = 'absolute';
+      stats.domElement.style.left = '0px';
+      stats.domElement.style.top = '0px';
+      document.body.appendChild(stats.domElement);
+      count_particles = document.querySelector('.js-count-particles');
+      update = function() {
+        stats.begin();
+        stats.end();
+        if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+          count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+        }
+        requestAnimationFrame(update);
+      };
+      requestAnimationFrame(update);
+</script>
+
+</body>
+
+</html>
